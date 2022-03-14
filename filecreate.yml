@@ -1,0 +1,7 @@
+-
+  name: dosya oluşturma otomasyonu
+  hosts: all
+  become: true
+  tasks:
+   - name: create folder
+     file: path=/etc/ansible/test.txt state=touch

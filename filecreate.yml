@@ -1,6 +1,6 @@
 -
   name: dosya oluşturma otomasyonu
-  hosts: {{hosts}}
+  hosts: "{{hosts}}"
   become: true
   tasks:
    - name: create folder

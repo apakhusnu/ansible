@@ -4,4 +4,7 @@
   become: true
   tasks:
    - name: create folder
-     file: path=/etc/ansible/test.txt state=touch
+     file: 
+       path: /etc/husnutest.conf
+       state: touch
+     #file: path=/etc/ansible/test.txt state=touch

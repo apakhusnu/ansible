@@ -1,0 +1,13 @@
+-
+  name: dosya silme
+  hosts: "{{hosts}}"
+  become: true
+  tasks:
+   - name: move to file
+     shell: 
+       cmd: cp /etc/husnutest.conf /tmp/husnutest.old
+
+   - name: dosya sil
+     file: 
+       path: /etc/husnutest.conf
+       state: absent
